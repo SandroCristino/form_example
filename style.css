@@ -5,6 +5,7 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Sono:wght@200;500&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -10950,20 +10951,12 @@ textarea.form-control-lg {
     background-size: cover;
   }
 }
-hr {
-  color: red;
-  border: 500px;
-}
-
-#navbar_items {
-  color: #a3cfbb;
-}
-
 #navbar {
-  background-color: #d2f4ea;
+  background-color: #dee2e6;
+  font-family: "Sono", sans-serif;
 }
 
-input[type=search]:focus {
+input:focus {
   outline-color: green;
 }
 
@@ -10973,7 +10966,7 @@ body {
 
 #main_container {
   height: 100%;
-  background-color: #6ea8fe;
+  background-color: #a3cfbb;
 }
 
 form button {
@@ -10983,4 +10976,30 @@ form button {
 
 input {
   width: 100%;
+}
+
+.middle {
+  position: relative;
+}
+
+.middle:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFF;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.middle:hover:before {
+  visibility: visible;
+  transform: scaleX(0.25);
+}
+
+#design_right_top {
+  font-family: "Sono", sans-serif;
 }/*# sourceMappingURL=style.css.map */
