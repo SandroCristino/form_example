@@ -10941,6 +10941,20 @@ textarea.form-control-lg {
           appearance: none;
 }
 
+@media only screen and (max-width: 767px) {
+  #design_left_container {
+    display: none;
+  }
+  #body_container {
+    background: url(./design.jpg);
+    background-size: cover;
+  }
+}
+hr {
+  color: red;
+  border: 500px;
+}
+
 #navbar_items {
   color: #a3cfbb;
 }
@@ -10951,4 +10965,22 @@ textarea.form-control-lg {
 
 input[type=search]:focus {
   outline-color: green;
+}
+
+body {
+  background-color: #cfe2ff;
+}
+
+#main_container {
+  height: 100%;
+  background-color: #6ea8fe;
+}
+
+form button {
+  width: 100%;
+  height: 2rem;
+}
+
+input {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
